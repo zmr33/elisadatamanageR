@@ -42,4 +42,4 @@ This package is currently not on CRAN. To install from GitHub:
 install.packages("devtools")
 
 # Then install this package
-devtools::install_github("your-username/elisadatamanageR")
+devtools::install_github("zmr33/elisadatamanageR")
