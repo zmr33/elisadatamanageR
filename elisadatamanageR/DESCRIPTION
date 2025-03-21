@@ -1,0 +1,15 @@
+Package: elisadatamanageR
+Type: Package
+Title: Data Management Pipeline for Gen 5 ELISA Data
+Version: 0.1.0
+Author: Zach Reynolds, <tti2@cdc.gov>
+Maintainer: Zach Reynolds, ,<tti2@cdc.gov>
+Description: This package takes excel files output by the Gen 5 microplate 
+    reading software, combines them, extracts the data from each 8x12 table
+    and transforms it into long format. It checks the plate controls per plate,
+    and then it looks at the replicate data between samples (mean/%cv, etc.). 
+    There is room for additional analyses if needed.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
