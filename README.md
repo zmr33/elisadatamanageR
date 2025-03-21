@@ -1,10 +1,45 @@
 # elisadatamanageR
-R package for ETL pipeline for ELISA Gen 5 software. 
 
-This will contain all the code necessary to automatically import, merge, clean, 
-and run preliminary analysis on outputs from the Gen 5 Microplate reading software
+An R package for automated ELISA data management from the Gen 5 microplate reading software for the Ov16 ELISA.
 
-This is built for ELISA data specifically, for O. volvulus serological surveillance. 
-Data needs to be set up a certain way in your Gen 5 output for the code to work properly.
+## Overview
 
-I don't have access to the Gen5 microplate reading software so keep that in mind.
+`elisadatamanageR` is a lightweight R package designed to support end-to-end processing of ELISA plate data exported from Gen5 Microplate Reader Software as .xlsx files. It was developed specifically for handling *Onchocerca volvulus* (Ov16) serological surveillance data. It might become adaptable to other ELISA-based workflows in the future, we'll see. 
+
+The pipeline automates the import, cleaning, merging, tracking, and analysis of ELISA data, with support for quality control thresholds, control tracking, Levey-Jennings plots, and clean Excel exports.
+
+See example folder for an example pipeline and example excel file layout (with no data in it).
+
+**Note:** This package assumes your Gen5 output is structured in a specific, consistent format. If your Gen5 exports differ significantly, the functions may need to be adjusted. This package was developed without direct access to the Gen5 software interface, so keep that in mind.
+
+## Key Features
+
+- Batch import of ELISA plate files (.xlsx)
+- Cleans numeric fields, handles symbols: `<`, `>`, "*" , `OVRFLW`, "?????", and non-numeric values
+- Extracts concentration and layout (sample name) tables
+- Validates and flags control samples based on user-defined thresholds (default thresholds are for ov16 elisa)
+- Performs qc checks with customizable positivity thresholds and qc %
+- Generates interactable Levey-Jennings plots and wide data for excel-based analysis
+- Outputs a fully formatted Excel workbook with all results, flags, and metadata
+
+## Requirements
+
+- R version ≥ 4.0
+- Packages:
+  - `tidyverse`
+  - `readxl`
+  - `openxlsx`
+  - `progress`
+  - `lubridate`
+  - `plotly` 
+
+## Installation
+
+This package is currently not on CRAN. To install from GitHub:
+
+```r
+# Install devtools if you haven't already
+install.packages("devtools")
+
+# Then install this package
+devtools::install_github("your-username/elisadatamanageR")
