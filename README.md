@@ -10,7 +10,7 @@ The pipeline automates the import, cleaning, merging, tracking, and analysis of 
 
 See example folder for an example pipeline and example excel file layout (with no data in it).
 
-**Note:** This package assumes your Gen5 output is structured in a specific, consistent format, relying on the table names as keywords to locate the tables ('Layout', '450', 'Blank 450' and '[Concentration]'). If your Gen5 exports do not contain these keywords with the tables beneath them, the functions may need to be adjusted. This package was developed without direct access to the Gen5 software, so keep that in mind.
+**Note:** This package assumes your Gen5 output is structured in a specific, consistent format, relying on the table names as keywords to locate the tables ('Layout', '450', 'Blank 450', and '[Concentration]'). If your Gen5 exports do not contain these keywords with the tables beneath them, the functions may need to be adjusted. This package was developed without direct access to the Gen5 software, so keep that in mind.
 
 ## Key Features
 
