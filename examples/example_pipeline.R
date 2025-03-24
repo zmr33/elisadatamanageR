@@ -3,12 +3,12 @@
 #'                       ELISA Data Management - Example Script
 #'
 #'  This script demonstrates how to use the `elisadatamanageR` package to:
-#'    1. Load raw ELISA excel data
+#'    1. Load Gen 5 plate reader output files
 #'    2. Check for file formatting errors
 #'    3. Extract raw tables and sample id layouts
 #'    4. Format and clean the data
-#'    5. Perform control validation and sample qc checks
-#'    6. Create summary statistics and interactive levey jennings plot
+#'    5. Track controls and sample qc checks
+#'    6. Create summary statistics and interactive levey jennings plot (for control tracking)
 #'    7. Export results to a formatted excel report
 #'
 #'
