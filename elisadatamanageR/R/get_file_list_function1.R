@@ -1,20 +1,27 @@
 #'
+#'            Select and list data files from a specified folder
 #'
-#'               select folder and file path for samples
+#' This function searches for`.xlsx` files in a given folder.
+#' It returns the full file paths of all matching files.
 #'
+#' @param folderpath Character. Path to the folder where your ELISA files are stored.
+#'        Example: `"C:/Users/OneDrive - CDC/surveys/country/year_1"`
 #'
-#' #specify a folder path
-#' folderpath <- "path/to/folder"
+#' @param file_type Character. File extension to search for.
+#'              Only calls excel files, `"xlsx"`, from within selected folder.
 #'
+#' @return A character vector of full file paths matching the given type.
+#'         If no matching files are found, a warning is returned.
 #'
-#'          attempt to maintain one filetype
+#' @examples
+#' # Specify the path to your data folder (use quotes!)
+#' folderpath <- "C:/Users/youruserid/documents/elisa_data"
 #'
-#' #identify your folder containing elisa excel files
-#' file_path <- get_files_by_type(folderpath, file_type = "xlsx")
+#' #get excel files
+#' file_list <- get_files(folderpath)  #or
+#' file_list <- get_files("C:/Users/youruserid/documents/elisa_data")
 #'
-#' #dentify your folder containing elisa csv if they're not excel files
-#' file_path <- get_files_by_type(folderpath, file_type = "csv")
-#'
+#' @export
 
 
 get_files <- function(folderpath, file_type = "xlsx") {
