@@ -1,6 +1,6 @@
 # elisadatamanageR
 
-An R package for automated ELISA data management from the Gen 5 microplate reading software for the Ov16 ELISA.
+An R package for automated ELISA data management from the Gen 5 microplate reading software for the Ov16 ELIS (and other ELISAs in the future).
 
 ## Overview
 
