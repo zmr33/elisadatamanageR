@@ -4,7 +4,7 @@ An R package for automated ELISA data management from the Gen 5 microplate readi
 
 ## Overview
 
-`elisadatamanageR` is a lightweight R package designed to support end-to-end processing of ELISA plate data exported from Gen5 Microplate Reader Software as .xlsx files. It was developed specifically for handling *Onchocerca volvulus* (Ov16) serological surveillance data. It might become adaptable to other ELISA-based workflows in the future, we'll see. 
+`elisadatamanageR` is a lightweight R package designed to support end-to-end processing of ELISA plate data exported from the Gen5 Microplate Reading Software as .xlsx files. It was developed specifically for handling *Onchocerca volvulus* (Ov16) serological surveillance data. It might become adaptable to other ELISA-based workflows in the future, we'll see. 
 
 The pipeline automates the import, cleaning, merging, tracking, and analysis of ELISA data, with support for quality control thresholds, control tracking, Levey-Jennings plots, and clean Excel exports.
 
