@@ -47,6 +47,7 @@ devtools::install_github(
      repo   = "zmr33/elisadatamanageR",  # repo
      ref    = "main",                    # branch
      subdir = "elisadatamanageR"         # folder that has 'DESCRIPTION'
+)
 
 # Load package
 library(elisadatamanageR)
