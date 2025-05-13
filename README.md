@@ -40,6 +40,16 @@ This package is currently not on CRAN. To install from GitHub:
 ```r
 # Install devtools if you haven't already
 install.packages("devtools")
+library(devtools)
 
-# Then install this package
-devtools::install_github("zmr33/elisadatamanageR")
+# Then install the package like this 
+devtools::install_github(
+     repo   = "zmr33/elisadatamanageR",  # repo
+     ref    = "main",                    # branch
+     subdir = "elisadatamanageR"         # folder that has 'DESCRIPTION'
+
+# Load package
+library(elisadatamanageR)
+
+# Verify - a pop-up in the help tab should appear 
+?check_plate_data()
