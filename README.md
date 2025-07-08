@@ -19,7 +19,7 @@ See example folder for an example pipeline and example excel file layout (with n
 - Extracts concentration and layout (sample name) tables
 - Validates and flags control samples based on user-defined thresholds (default thresholds are for ov16 elisa)
 - Performs qc checks with customizable positivity thresholds and qc %
-- Generates interactable Levey-Jennings plots and wide data for excel-based analysis
+- Generates interactive Levey-Jennings plots and wide data for excel-based analysis
 - Outputs a fully formatted Excel workbook with all results, flags, and metadata
 
 ## Package Requirements
